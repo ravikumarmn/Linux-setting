@@ -17,6 +17,17 @@ keeping `listenport` other 22 is good thing if you are using ssh from windows al
 
 `connectaddress` - get the wsl ip address
 
+#change the ssh config
+open and edit below
+```
+sudo nano /etc/ssh/sshd_config
+```
+change these:
+`Port 22`
+`ListenAddress 0.0.0.0`
+`PasswordAuthentication yes`
+
+
 
 # check the portproxy 
 
