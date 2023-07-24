@@ -1,6 +1,6 @@
 ## write the service script
 ```bash
-sudo nano stc/systemd/system/my_service.service
+sudo nano /etc/systemd/system/my_service.service
 ```
 this file should have `ExecStart` pointing to file to execute when start the service, it can be anykind of file
 examples
