@@ -9,3 +9,6 @@ sudo systemctl enable ssh --now
 
 Start the ssh service
 `sudo systemctl start ssh`
+
+allow firewall
+`sudo ufw allow ssh`
