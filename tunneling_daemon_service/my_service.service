@@ -1,11 +1,14 @@
 [Unit]
 Description=VSCode tunnel service
 After=network.target
+StartLimitIntervalSec=0
 
 [Service]
-ExecStart=/bin/bash /home/sigmoid/start_tunnel.sh
+Type=simple
 Restart=always
+RestartSec=1
 User=sigmoid
+ExecStart=/bin/bash /home/sigmoid/start_tunnel.sh
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
