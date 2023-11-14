@@ -45,3 +45,15 @@ ExecStart=/user/bin/python3 /home/user/myservice.py >> /var/log/my_service.log 2
 ```bash
 sudo systemctl is-active my_service
 ```
+
+## systemctl was not installed
+```
+sudo apt-get update
+sudo apt-get install dbus-user-session
+systemctl --user enable dbus --now
+```
+
+## tunnel service start can be added to `start_tunnel.sh`
+```bash
+tunnel service install 
+```
