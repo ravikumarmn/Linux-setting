@@ -2,6 +2,9 @@
 ```bash
 lsb_release -a
 ```
+```bash
+apt --fix-broken install
+```
 
 ### nvidia-installation
 - install and uninstall nvidia drivers in linux machine
