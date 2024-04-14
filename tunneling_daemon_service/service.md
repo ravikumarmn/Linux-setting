@@ -11,6 +11,10 @@ or
 ```bash
 ExecStart=/bin/bash /home/user/myservice.sh
 ```
+## `code` file needs execute permission
+```bash
+sudo chmod u+x /home/sigmoid/code
+```
 
 ## create .sh file and start the service
 currently created this file at `/`
