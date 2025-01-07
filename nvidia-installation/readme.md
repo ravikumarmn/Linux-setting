@@ -11,3 +11,11 @@ if you have downloaded in the ~/Downloads directory run this command\
 `$ bash install_nvidia.sh`
 
 After successfull running the above command, reboot the system and open terminal and run `nvidia-smi` to verify the installation.
+
+sigmoid currently need to have
+```
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH
+source ~/.bashrc
+
+```
