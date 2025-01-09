@@ -1,0 +1,12 @@
+while installing 
+
+llama-cpp-python ::: linux errors
+
+```
+sudo apt install libgomp1
+sudo apt install gcc g++
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/sigmoid/miniconda3/envs/llm/lib:$LD_LIBRARY_PATH
+pip install --no-cache-dir llama-cpp-python
+
+```
