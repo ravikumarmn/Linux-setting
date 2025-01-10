@@ -112,4 +112,11 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
 
 ---
 
-This README should help you quickly reference the steps and understand why each command is important for configuring CUDA in WSL. Let me know if you need further clarification or updates!
+
+Force WSL to Use Windows Driver: Replace the WSL NVIDIA library path with the Windows-exposed library:
+
+```
+export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+```
+
+
